@@ -1,0 +1,23 @@
+From: Cascade Concrete AR <ar@cascadeconcrete.example>
+To: Dana Ortiz <dana@juniperridge.example>
+Date: Thu, 15 Oct 2026 07:55:00 -0700
+Subject: Invoice 7781: Whitfield footings
+Message-ID: <e4@sample.officehand.example>
+Authentication-Results: mx.google.com; dkim=pass; spf=pass; dmarc=pass
+Content-Type: text/plain; charset="utf-8"
+Content-Transfer-Encoding: 7bit
+MIME-Version: 1.0
+
+Dana,
+
+Invoice 7781, Whitfield Lakehouse (7 Osprey Point Rd)
+Invoice date: October 15, 2026
+
+Footings, 142 lf: $16,400.00
+Stem walls: $9,840.00
+Pump truck, 2 days: $1,400.00
+
+Total due: $28,640.00
+Terms: Net 30
+
+Cascade Concrete

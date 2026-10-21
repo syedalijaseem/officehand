@@ -1,0 +1,51 @@
+{
+  "id": "E1",
+  "category": "change_order",
+  "acceptable_categories": [
+    "change_order"
+  ],
+  "project_id": "P-101",
+  "project_match": "exact",
+  "client_name": "Laura & Tom Hendricks",
+  "sender_org": "Ironline Framing",
+  "sender_role": "subcontractor",
+  "document_number": "CO #4",
+  "amount": "3850.00",
+  "invoice_date": null,
+  "due_date": null,
+  "key_dates": [
+    {
+      "label": "approval deadline",
+      "date": "2026-10-14"
+    },
+    {
+      "label": "install",
+      "date": "2026-10-15"
+    }
+  ],
+  "line_item_totals": [
+    "2450.00",
+    "1040.00",
+    "360.00"
+  ],
+  "urgency": null,
+  "required_warnings": [],
+  "forbidden_warnings": [
+    "total_mismatch",
+    "payment_details_change",
+    "possible_injection",
+    "lookalike_sender_domain",
+    "display_name_spoof"
+  ],
+  "action_keywords": [
+    "approv|sign|review"
+  ],
+  "draft_expected": true,
+  "draft_must": [],
+  "draft_must_not": [
+    "confirm.*(bank|account)",
+    "https?://"
+  ],
+  "recipient": "office@ironlineframing.example",
+  "notes": "Ties to D5 \u00a76: extra work needs a written CO approved in advance."
+}

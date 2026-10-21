@@ -1,0 +1,46 @@
+# Secrets & local data
+.env
+.env.*
+!.env.example
+data/
+backend/data/
+*.db
+*.db-wal
+*.db-shm
+secrets/
+*.pem
+client_secret*.json
+token*.json
+
+# Python
+__pycache__/
+*.py[cod]
+.venv/
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.coverage
+htmlcov/
+
+# Node / Angular
+node_modules/
+frontend/dist/
+frontend/.angular/
+coverage/
+
+# Eval output
+evals/reports/*.md
+evals/reports/*.json
+!evals/reports/.gitkeep
+
+# OS / editors
+.DS_Store
+.idea/
+
+# Playwright
+**/e2e/.results/
+**/e2e/.data/
+**/playwright-report/
+
+# Internal planning docs: kept local, never pushed
+/docs/

@@ -1,0 +1,34 @@
+# Project documents (docs/SAMPLE_DATA.md §5). The seed script uploads Google Docs from markdown
+# and the PDF as-is, into Drive subfolders named after the project.
+documents:
+  - id: D1
+    file: D1-hendricks-construction-agreement.md
+    title: Hendricks Residence – Construction Agreement
+    project_id: P-101
+    doc_type: contract
+    drive_format: google_doc
+  - id: D2
+    file: D2-hendricks-specifications.pdf
+    source: D2-hendricks-specifications.md
+    title: Hendricks Residence – Specifications & Finish Schedule
+    project_id: P-101
+    doc_type: specification
+    drive_format: pdf
+  - id: D3
+    file: D3-alvarez-remodel-agreement.md
+    title: Alvarez Kitchen & Addition – Remodel Agreement
+    project_id: P-102
+    doc_type: contract
+    drive_format: google_doc
+  - id: D4
+    file: D4-whitfield-master-schedule.md
+    title: Whitfield Lakehouse – Master Schedule
+    project_id: P-103
+    doc_type: schedule
+    drive_format: google_doc
+  - id: D5
+    file: D5-standard-subcontract-terms.md
+    title: Juniper Ridge – Standard Subcontract Terms
+    project_id: company
+    doc_type: terms
+    drive_format: google_doc

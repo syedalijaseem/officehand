@@ -1,0 +1,20 @@
+services:
+  app:
+    build: .
+    env_file: .env
+    environment:
+      ENV: dev
+    ports:
+      - "8000:8000"
+    volumes:
+      - officehand-data:/data
+    read_only: true
+    tmpfs:
+      - /tmp
+    security_opt:
+      - no-new-privileges:true
+    cap_drop:
+      - ALL
+
+volumes:
+  officehand-data:

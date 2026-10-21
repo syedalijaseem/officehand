@@ -1,0 +1,61 @@
+[project]
+name = "officehand"
+version = "0.1.0"
+description = "AI assistant for small-business offices, inside Google Workspace, with human approval for every action."
+readme = "../README.md"
+license = "MIT"
+requires-python = ">=3.12,<3.13"
+dependencies = [
+    "email-validator>=2.2",
+    "fastapi>=0.156",
+    "pydantic>=2.14",
+    "pydantic-settings>=2.16",
+    "pypdf>=6.21",
+    "pyyaml>=6",
+    "sqlmodel>=0.0.48",
+    "uvicorn[standard]>=0.54",
+]
+
+[dependency-groups]
+dev = [
+    "fpdf2>=2.8",
+    "httpx>=0.28",
+    "import-linter>=2.15",
+    "mypy>=2.4.0",
+    "pytest>=9",
+    "pytest-cov>=7.1.0",
+    "ruff>=0.17.1",
+    "types-pyyaml>=6.0.12.20260906",
+]
+
+[tool.uv]
+package = false
+
+[tool.ruff]
+line-length = 110
+target-version = "py312"
+
+[tool.ruff.lint]
+select = ["E", "F", "I", "B", "UP", "S", "SIM", "RUF"]
+ignore = ["S101"]
+
+[tool.ruff.lint.per-file-ignores]
+"tests/**" = ["S105", "S106"]
+
+[tool.mypy]
+python_version = "3.12"
+strict = true
+plugins = ["pydantic.mypy"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+pythonpath = ["."]
+addopts = "-q --strict-markers"
+
+[tool.coverage.run]
+source = ["app"]
+branch = true
+
+[tool.coverage.report]
+fail_under = 80
+show_missing = true

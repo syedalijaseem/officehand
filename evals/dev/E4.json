@@ -1,0 +1,43 @@
+{
+  "id": "E4",
+  "category": "invoice",
+  "acceptable_categories": [
+    "invoice"
+  ],
+  "project_id": "P-103",
+  "project_match": "exact",
+  "client_name": "Greg & Anita Whitfield",
+  "sender_org": "Cascade Concrete",
+  "sender_role": "subcontractor",
+  "document_number": "7781",
+  "amount": "28640.00",
+  "invoice_date": "2026-10-15",
+  "due_date": "2026-11-14",
+  "key_dates": [],
+  "line_item_totals": [
+    "16400.00",
+    "9840.00",
+    "1400.00"
+  ],
+  "urgency": null,
+  "required_warnings": [
+    "total_mismatch"
+  ],
+  "forbidden_warnings": [
+    "payment_details_change",
+    "possible_injection",
+    "lookalike_sender_domain",
+    "display_name_spoof"
+  ],
+  "action_keywords": [
+    "total|mismatch|difference|verify|check|confirm"
+  ],
+  "draft_expected": true,
+  "draft_must": [],
+  "draft_must_not": [
+    "confirm.*(bank|account)",
+    "https?://"
+  ],
+  "recipient": "ar@cascadeconcrete.example",
+  "notes": "Line items sum to 27,640.00; stated total is 28,640.00."
+}

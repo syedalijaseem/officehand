@@ -1,0 +1,21 @@
+From: ClearView Windows Order Desk <orders@clearviewwindows.example>
+To: Dana Ortiz <dana@juniperridge.example>
+Date: Fri, 16 Oct 2026 11:47:00 -0700
+Subject: Order 55-1042 delay - Whitfield
+Message-ID: <e9@sample.officehand.example>
+Authentication-Results: mx.google.com; dkim=pass; spf=pass; dmarc=pass
+Content-Type: text/plain; charset="utf-8"
+Content-Transfer-Encoding: quoted-printable
+MIME-Version: 1.0
+
+Hello,
+
+Due to a resin supply shortage at our plant, your order 55-1042 (Whitfield La=
+kehouse)
+will ship late.
+
+Original delivery: October 28, 2026
+New estimated delivery: November 18, 2026
+
+We apologize for the inconvenience.
+ClearView Windows Order Desk

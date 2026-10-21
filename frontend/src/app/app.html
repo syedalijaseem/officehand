@@ -1,0 +1,41 @@
+<a
+  href="#main"
+  class="sr-only focus:not-sr-only focus:fixed focus:top-3 focus:left-3 focus:z-50 focus:rounded-lg focus:bg-paper-raised focus:px-4 focus:py-2 focus:shadow-[var(--shadow-card)]"
+  >Skip to content</a
+>
+
+<div class="min-h-dvh">
+  <header
+    class="border-b border-rule bg-paper/90 backdrop-blur supports-[backdrop-filter]:bg-paper/75"
+  >
+    <div class="mx-auto flex max-w-6xl items-center gap-8 px-4 py-4 sm:px-6">
+      <a routerLink="/" class="group flex items-baseline gap-2" data-testid="brand">
+        <span
+          aria-hidden="true"
+          class="grid size-8 place-items-center rounded-lg bg-spruce font-serif text-lg font-semibold text-paper-raised transition-transform duration-300 ease-[var(--ease-out-expo)] group-hover:-rotate-6"
+          >O</span
+        >
+        <span class="font-serif text-xl font-semibold tracking-tight">OfficeHand</span>
+      </a>
+
+      <nav aria-label="Main" class="flex items-center gap-1">
+        <a
+          routerLink="/inbox"
+          routerLinkActive="bg-spruce-wash text-spruce-strong"
+          class="rounded-lg px-3 py-2 font-medium text-ink-muted transition-colors hover:bg-paper-sunk hover:text-ink"
+          >Inbox</a
+        >
+        <a
+          routerLink="/ask"
+          routerLinkActive="bg-spruce-wash text-spruce-strong"
+          class="rounded-lg px-3 py-2 font-medium text-ink-muted transition-colors hover:bg-paper-sunk hover:text-ink"
+          >Ask</a
+        >
+      </nav>
+    </div>
+  </header>
+
+  <main id="main" tabindex="-1" class="mx-auto max-w-6xl px-4 py-10 sm:px-6 sm:py-14">
+    <router-outlet />
+  </main>
+</div>

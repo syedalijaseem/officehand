@@ -1,0 +1,17 @@
+From: Jorge Rios <jorge@rioplumbing.example>
+To: Dana Ortiz <dana@juniperridge.example>
+Date: Thu, 15 Oct 2026 15:30:00 -0700
+Subject: Alvarez rough-in passed
+Message-ID: <e8@sample.officehand.example>
+Authentication-Results: mx.google.com; dkim=pass; spf=pass; dmarc=pass
+Content-Type: text/plain; charset="utf-8"
+Content-Transfer-Encoding: 7bit
+MIME-Version: 1.0
+
+Dana,
+
+Rough-in inspection at the Alvarez job passed today, no corrections.
+We'll set top-out next Tuesday.
+
+Jorge
+Rio Plumbing

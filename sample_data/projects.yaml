@@ -1,0 +1,33 @@
+# Fictional projects for Juniper Ridge Builders (see docs/SAMPLE_DATA.md §2).
+company:
+  name: Juniper Ridge Builders
+  town: Alder Falls, WA
+  domain: juniperridge.example
+
+projects:
+  - id: P-101
+    name: Hendricks Residence
+    description: 3,400 sf new custom home
+    client: Laura & Tom Hendricks
+    address: 412 Cedar Loop, Alder Falls, WA
+    contract_sum: "1185000.00"
+    status: framing
+    aliases: [Hendricks, Cedar Loop house, 412 Cedar Loop, the Cedar Loop job]
+
+  - id: P-102
+    name: Alvarez Kitchen & Addition
+    description: Kitchen remodel + 450 sf addition
+    client: Rosa Alvarez
+    address: 88 Fernhill Ave, Alder Falls, WA
+    contract_sum: "268500.00"
+    status: rough-in
+    aliases: [Alvarez, the kitchen job, Fernhill]
+
+  - id: P-103
+    name: Whitfield Lakehouse
+    description: 4,100 sf new custom home
+    client: Greg & Anita Whitfield
+    address: 7 Osprey Point Rd, Alder Falls, WA
+    contract_sum: "2140000.00"
+    status: foundation
+    aliases: [Whitfield, the lake house, the lake job, Osprey Point]

@@ -1,0 +1,66 @@
+@import 'tailwindcss';
+
+/*
+ * OfficeHand design tokens: a "site office ledger" direction.
+ * Warm paper surfaces, ink text, spruce green for primary actions, and semantic colors that
+ * match warning severities (info / warn / block). Never rely on color alone: severities
+ * always pair an icon and text.
+ */
+@theme {
+  --font-sans: 'Public Sans Variable', ui-sans-serif, system-ui, sans-serif;
+  --font-serif: 'Source Serif 4 Variable', ui-serif, Georgia, serif;
+
+  --color-paper: #f6f3ec;
+  --color-paper-raised: #fffdf8;
+  --color-paper-sunk: #ece7db;
+  --color-rule: #d9d1bf;
+  --color-ink: #1f2421;
+  --color-ink-muted: #5b625d;
+
+  --color-spruce: #1f5c4a;
+  --color-spruce-strong: #164536;
+  --color-spruce-wash: #e3eee9;
+
+  --color-info: #2f5d8a;
+  --color-info-wash: #e6eef6;
+  --color-warn: #8a5a12;
+  --color-warn-wash: #f8ecd4;
+  --color-block: #9b3522;
+  --color-block-wash: #f6e1db;
+
+  --radius-card: 0.875rem;
+  --shadow-card: 0 1px 0 rgb(31 36 33 / 0.06), 0 8px 24px -12px rgb(31 36 33 / 0.18);
+  --shadow-card-hover: 0 1px 0 rgb(31 36 33 / 0.08), 0 16px 32px -14px rgb(31 36 33 / 0.28);
+  --ease-out-expo: cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+@layer base {
+  html {
+    font-size: 100%; /* 16px minimum body text */
+  }
+
+  body {
+    @apply bg-paper font-sans text-ink antialiased;
+  }
+
+  h1,
+  h2,
+  h3 {
+    @apply font-serif tracking-tight;
+  }
+
+  :focus-visible {
+    outline: 3px solid var(--color-spruce);
+    outline-offset: 3px;
+    border-radius: 6px;
+  }
+
+  @media (prefers-reduced-motion: reduce) {
+    *,
+    *::before,
+    *::after {
+      transition-duration: 0.01ms !important;
+      animation-duration: 0.01ms !important;
+    }
+  }
+}

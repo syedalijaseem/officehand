@@ -1,0 +1,23 @@
+From: Summit Electric Billing <billing@summitelectric.example>
+To: Dana Ortiz <dana@juniperridge.example>
+Date: Wed, 14 Oct 2026 09:12:00 -0700
+Subject: Invoice SE-2291: Hendricks rough-in
+Message-ID: <e3@sample.officehand.example>
+Authentication-Results: mx.google.com; dkim=pass; spf=pass; dmarc=pass
+Content-Type: text/plain; charset="utf-8"
+Content-Transfer-Encoding: 7bit
+MIME-Version: 1.0
+
+Hello,
+
+Please find our invoice below.
+
+Invoice: SE-2291
+Invoice date: October 14, 2026
+Project: Hendricks Residence, 412 Cedar Loop
+Description: Rough electrical, 3,400 sf residence, per contract scope
+Amount due: $14,200.00
+Terms: Net 30
+
+Thank you for your business.
+Summit Electric

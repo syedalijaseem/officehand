@@ -1,0 +1,23 @@
+# Known senders. Drives unknown/lookalike-domain and display-name-spoof checks.
+internal:
+  domain: juniperridge.example
+  people:
+    - { name: Dana Ortiz, email: dana@juniperridge.example, role: office_manager }
+    - { name: Mike Brennan, email: mike@juniperridge.example, role: owner }
+    - { name: Sam Whitaker, email: sam@juniperridge.example, role: project_manager }
+
+organizations:
+  - { name: Ironline Framing, role: subcontractor, trade: framing, domains: [ironlineframing.example] }
+  - { name: Summit Electric, role: subcontractor, trade: electrical, domains: [summitelectric.example] }
+  - { name: Rio Plumbing, role: subcontractor, trade: plumbing, domains: [rioplumbing.example] }
+  - { name: Cascade Concrete, role: subcontractor, trade: foundations, domains: [cascadeconcrete.example] }
+  - { name: ClearView Windows, role: supplier, trade: windows, domains: [clearviewwindows.example] }
+  - { name: Granite Works, role: subcontractor, trade: countertops, domains: [graniteworks.example] }
+  - { name: Northfork Lumber, role: supplier, trade: lumber, domains: [northforklumber.example] }
+
+clients:
+  - { name: Laura Hendricks, email: laura.hendricks@mailbox.example, project: P-101 }
+  - { name: Tom Hendricks, email: tom.hendricks@mailbox.example, project: P-101 }
+  - { name: Rosa Alvarez, email: rosa.alvarez@mailbox.example, project: P-102 }
+  - { name: Greg Whitfield, email: greg.whitfield@mailbox.example, project: P-103 }
+  - { name: Anita Whitfield, email: anita.whitfield@mailbox.example, project: P-103 }
